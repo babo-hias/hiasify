@@ -117,16 +117,16 @@ def get_spotify_wrapped(df: pd.DataFrame) -> None:
 ###########################################################
 
 
+st.title("Hiasify Wrapped")
+
 # create upload field
 uploaded_file = st.file_uploader(
-    "Bitte lade deine Spotify Daten hoch (my_spotify_data.zip)",
+    "Hol dir deine Spotify-Daten, indem du dich am Rechner bei Spotify anmeldest und unter 'Konto' -> 'Account Privacy' deine 'Extended Streaming History' anforderst. Nach ein paar Tagen bekommst du eine E-Mail bekommst du eine zip-Datei (my_spotify_data.zip), die du hier hochladen kannst und die Analyse kann beginnen!",
     type=["zip"],
     accept_multiple_files=False
 )
 
 if uploaded_file is not None:
-    st.success("ZIP-Datei erfolgreich hochgeladen!")
-
     with zipfile.ZipFile(uploaded_file, 'r') as zip_ref:
         # Liste aller Dateien im ZIP-Archiv
         file_list = zip_ref.namelist()
