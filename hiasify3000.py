@@ -121,7 +121,7 @@ st.title("Hiasify Wrapped")
 
 # create upload field
 uploaded_file = st.file_uploader(
-    "Hol dir deine Spotify-Daten, indem du dich am Rechner bei Spotify anmeldest und unter 'Konto' -> 'Account Privacy' deine 'Extended Streaming History' anforderst. Nach ein paar Tagen bekommst du eine E-Mail bekommst du eine zip-Datei (my_spotify_data.zip), die du hier hochladen kannst und die Analyse kann beginnen!",
+    "Hol dir deine Spotify-Daten, indem du dich am Rechner bei Spotify anmeldest und unter 'Konto' -> 'Account Privacy' deine 'Extended Streaming History' anforderst. Nach ein paar Tagen bekommst du eine zip-Datei (my_spotify_data.zip), die du hier hochladen kannst und die Analyse kann beginnen!",
     type=["zip"],
     accept_multiple_files=False
 )
