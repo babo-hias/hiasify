@@ -117,7 +117,7 @@ def get_spotify_wrapped(df: pd.DataFrame) -> None:
 ###########################################################
 
 
-st.image("title.png", width="stretch")
+st.image("title_gold.png", width="stretch")
 
 # create upload field
 uploaded_file = st.file_uploader(
